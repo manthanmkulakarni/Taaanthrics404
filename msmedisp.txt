@@ -1,6 +1,6 @@
 Its difficult for MSME to predict the future market trend due to unavilability of previous market data.
 Hence it is a difficult task for them choose a right product for production.
-Hence by creating a single portal which can hold these required data these problems can be overcomed.
+Hence ngle portal which can hold these required data these problems can be overcomed.
 This data can be effictly used to predict future market trend and product demand using various artificial intelligence.
 With the increase in number of users the accurecy of prediction  increases .
 By taking stock market trend and seasonal changes gap between the actual and predicted result can be further decreased.
