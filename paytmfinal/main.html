@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    
+    <script type="text/javascript" ">
+function openpython(){
+var spawn = require('child_process').spawn,
+    py    = spawn('python', ['test.py']),
+    data = [1,2,3,4,5,6,7,8,9],
+    dataString = '';
+
+py.stdout.on('data', function(data){
+  dataString += data.toString();
+});
+py.stdout.on('end', function(){
+  console.log('Sum of numbers=',dataString);
+});
+py.stdin.write(JSON.stringify(data));
+py.stdin.end();
+
+}
+	</script> 
+    
+</head>
+<body>
+    <button onClick="openpython()">click here</button>
+</body>
+</html>
